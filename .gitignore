@@ -1,0 +1,110 @@
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+*.jou
+*.log
+*.str
+*.xpr
+*.Xil
+*.cache
+*.data
+*.runs
+*.hw
+*.zip
+*.html
+*.bit
+*.elf
+*.bin
+*config_settings
+*example_designs
+*.debug
+*~
+
+#Digilent Added ignore rules for Vivado projects
+
+# sdk exclusions
+**/sdk/.metadata
+**/sdk/**/*RemoteSystemsTempFiles
+**/sdk/**/*Debug
+**/sdk/**/*Release
+**/sdk/**/*webtalk
+
+# ignore everything in the hw_platform
+**/sdk/*hw_platform*/*
+# except
+!**/sdk/*hw_platform*/*.hdf
+!**/sdk/*hw_platform*/.*project
+
+# ignore everything in the BSP
+**/sdk/*_bsp*/*
+# except
+!**/sdk/*_bsp*/system.mss
+!**/sdk/*_bsp*/Makefile
+!**/sdk/*_bsp*/.*project
+
+# Make sure we keep only xci files in repo ip src subfolder
+**/repo/*/ip/*/src/*/*
+# Ignore 'generated_ip' directory inside repo/ip
+**/repo/*/ip/*/generated_ip
+!**/repo/*/ip/*/src/*/
+!**/repo/*/ip/*/src/*/*.xci
+!**/repo/*/ip/*/src/*/*.patch
+!**/repo/*/ip/*/src/*/*.tcl
+
+# Make sure we keep only xci files in ip src subfolder
+**/src/ip/*
+!**/src/ip/*/
+!**/src/ip/*/*.xci
+!**/src/ip/*/*.prj
+
+# Do not ignore anything in src/others
+!**/src/others/*
+
+# ignore everything in project folder
+**/proj/*
+# except this file and project generators
+!**/proj/create_project.tcl
+!**/proj/cleanup.cmd
+!**/proj/cleanup.sh
+
