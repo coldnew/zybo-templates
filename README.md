@@ -1,6 +1,8 @@
 # zybo-templates
 Basic project template for Xilinx zynq-7000 ZYBO board
 
+## About
+
 This project is based on [Digilent/ZYBO](https://github.com/Digilent/ZYBO), I keep the board file I need for different Vivado SDK.
 
 To use this template, you must switch to the dir contains `create_project.tcl`, take `2018.1/linux_bd` as example:
@@ -26,3 +28,9 @@ Then you will see following directories created by vivado
 4 directories, 4 files
 
 ```
+
+## Constraints
+
+The constraints file I used is [Zybo-Master.xdc](https://raw.githubusercontent.com/coldnew/zybo-templates/master/Zybo-Master.xdc), which is taken from [Digilent/digilent-xdc](https://github.com/Digilent/digilent-xdc). 
+
+Note that I don't have Zybo Z7 board, so I can't guarantee this template can work on `Zybo Z7`.
