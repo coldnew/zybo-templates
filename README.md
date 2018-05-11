@@ -34,3 +34,13 @@ Then you will see following directories created by vivado
 The constraints file I used is [Zybo-Master.xdc](https://raw.githubusercontent.com/coldnew/zybo-templates/master/Zybo-Master.xdc), which is taken from [Digilent/digilent-xdc](https://github.com/Digilent/digilent-xdc). 
 
 Note that I don't have Zybo Z7 board, so I can't guarantee this template can work on `Zybo Z7`.
+
+## Board Files
+
+The boad files I used is [zybo](https://raw.githubusercontent.com/coldnew/zybo-templates/master/data/board_files/zybo), which is taken from [Digilent/vivado-boards](https://github.com/Digilent/vivado-boards).
+
+To install the board files, just copy `data/board_files/zybo` to your vivado folder
+
+``` sh
+cp data/board_files/* /opt/Xilinx/Vivado/2016.1/data/boards/board_files/
+```
